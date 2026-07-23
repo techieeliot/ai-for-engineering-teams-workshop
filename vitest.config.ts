@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { defineConfig, configDefaults } from "vitest/config";
 import react from "@vitejs/plugin-react-swc";
 import { fileURLToPath } from "node:url";
 
@@ -10,6 +10,8 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./tests/setup.ts"],
+    // Playwright e2e specs live in tests/e2e and run via `npm run test:e2e`.
+    exclude: [...configDefaults.exclude, "tests/e2e/**"],
   },
   resolve: {
     alias: {

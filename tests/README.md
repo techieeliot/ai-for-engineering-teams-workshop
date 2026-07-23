@@ -7,16 +7,19 @@ component tests live **co-located** next to the code they cover
 things that don't belong to a single unit.
 
 ## What lives here
-- Test runner setup (e.g. `vitest.setup.ts`, jsdom/RTL config)
-- Shared fixtures and factories (e.g. realistic `Customer` builders)
-- Custom matchers and test helpers
-- Integration/e2e suites that span multiple units
+- `setup.ts` — Vitest setup (registers jest-dom matchers)
+- `e2e/` — Playwright end-to-end specs (run in a real browser)
+- Shared fixtures/factories, custom matchers, and test helpers
 
 ## What does not
 - Per-unit tests — keep those co-located with the source (see GUIDE-006).
 
-## Setup (not yet installed)
-The repo does not ship a test runner yet. Recommended stack: **Vitest** +
-**@testing-library/react** + **@testing-library/jest-dom**, with
-`"test": "vitest"` in `package.json`. See GUIDE-006 for structure and coverage
-expectations.
+## Running tests
+- **Unit / component** — Vitest + Testing Library (jsdom); co-located `*.test.ts(x)`.
+  - `npm test` (watch) · `npm run test:run` (one-shot)
+- **End-to-end** — Playwright (real browser); specs in `tests/e2e/`.
+  - `npm run test:e2e` — spins up a dedicated dev server on `:8080` and drives Chromium
+  - First run needs the browser + OS libs: `npx playwright install --with-deps chromium`
+
+Config: `vitest.config.ts` (excludes `tests/e2e/`) and `playwright.config.ts`.
+See [GUIDE-006](../docs/guides/GUIDE-006-test-structure.md) for structure and coverage.
