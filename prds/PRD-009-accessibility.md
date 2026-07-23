@@ -1,3 +1,17 @@
+---
+id: PRD-009
+title: Accessibility
+type: prd
+status: accepted
+description: >-
+  Product requirements for WCAG 2.1 AA accessibility across all dashboard
+  components: keyboard, screen readers, contrast, reduced motion.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-009
+related: [SPEC-009, GUIDE-003]
+---
+
 # Accessibility Requirements
 
 ## Business Context

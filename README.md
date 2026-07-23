@@ -34,16 +34,18 @@ npm run dev
 │   ├── app/             # App Router pages and layouts
 │   └── data/            # Mock data and API integration
 ├── public/              # Static assets
-├── exercises/           # Workshop exercises
-├── requirements/        # Feature requirements and specifications
-└── specs/               # Generated specifications (AI output)
+├── exercises/           # Workshop exercises (EXERCISE-NNN)
+├── prds/                # Product requirements (PRD-NNN, input to specs)
+├── specs/               # Generated specifications (SPEC-NNN, AI output)
+├── adrs/                # Architecture decision records (ADR-NNN)
+└── guides/              # Standards & how-to guides (GUIDE-NNN)
 ```
 
 ## Workshop Methodology
 
 This workshop teaches **spec-driven development** with AI agents:
 
-1. **Generate clear specifications** from the requirements in `/requirements/`
+1. **Generate clear specifications** from the PRDs in `/prds/`
 2. **Store generated specs** in `/specs/` for reference
 3. **Work through exercises** in `/exercises/` directory
 4. **Build iteratively** with AI assistance

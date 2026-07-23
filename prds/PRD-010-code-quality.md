@@ -1,3 +1,17 @@
+---
+id: PRD-010
+title: Code Quality
+type: prd
+status: accepted
+description: >-
+  Product requirements for consistent, maintainable code quality across
+  AI-generated components: naming, types, error handling, conventions.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-010
+related: [SPEC-010, GUIDE-004, ADR-001, ADR-002]
+---
+
 # Code Quality Requirements
 
 ## Business Context

@@ -1,3 +1,17 @@
+---
+id: PRD-006
+title: Production-Ready Dashboard
+type: prd
+status: accepted
+description: >-
+  Product requirements for making the dashboard production-ready: error
+  handling, data export, performance, accessibility, and security hardening.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-006
+related: [SPEC-006, GUIDE-005, GUIDE-006, GUIDE-003]
+---
+
 # Production-Ready Dashboard Requirements
 
 ## Business Context

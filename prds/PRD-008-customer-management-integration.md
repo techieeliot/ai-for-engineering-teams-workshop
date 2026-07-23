@@ -1,3 +1,17 @@
+---
+id: PRD-008
+title: Customer Management Integration
+type: prd
+status: accepted
+description: >-
+  Product requirements for customer management: CRUD API routes, a service
+  layer, an add-customer form with validation, and a customer list.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-008
+related: [SPEC-008, GUIDE-009, GUIDE-001, GUIDE-006]
+---
+
 # Customer Management Integration Requirements
 
 ## Business Context

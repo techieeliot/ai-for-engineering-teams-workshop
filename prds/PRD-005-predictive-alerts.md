@@ -1,3 +1,17 @@
+---
+id: PRD-005
+title: Predictive Alerts System
+type: prd
+status: accepted
+description: >-
+  Product requirements for the predictive alerts system: rule-based customer
+  risk monitoring with priority tiers, cooldowns, and dedup.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-005
+related: [SPEC-005, GUIDE-006, GUIDE-001]
+---
+
 # Predictive Alerts System Requirements
 
 ## Business Context

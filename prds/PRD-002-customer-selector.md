@@ -1,3 +1,17 @@
+---
+id: PRD-002
+title: CustomerSelector
+type: prd
+status: accepted
+description: >-
+  Product requirements for the CustomerSelector: search/filter and select among
+  100+ customers with a persisted visual selection state.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-002
+related: [SPEC-002, GUIDE-001, ADR-001, GUIDE-003]
+---
+
 # CustomerSelector Requirements
 
 ## Business Context

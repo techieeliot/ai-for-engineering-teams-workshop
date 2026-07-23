@@ -1,3 +1,17 @@
+---
+id: PRD-004
+title: Market Intelligence Widget
+type: prd
+status: accepted
+description: >-
+  Product requirements for the market intelligence widget: company sentiment,
+  news count, and top headlines from a mock API with caching.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-004
+related: [SPEC-004, GUIDE-009, GUIDE-001, ADR-001]
+---
+
 # Market Intelligence Widget Requirements
 
 ## Business Context

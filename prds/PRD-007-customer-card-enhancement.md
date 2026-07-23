@@ -1,3 +1,17 @@
+---
+id: PRD-007
+title: CustomerCard Enhancement
+type: prd
+status: accepted
+description: >-
+  Product requirements for adding click-to-select behavior and selected-state
+  visual feedback to CustomerCard, preserving existing behavior.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-007
+related: [SPEC-007, GUIDE-001, ADR-001, GUIDE-003]
+---
+
 # CustomerCard Enhancement Requirements
 
 ## Business Context

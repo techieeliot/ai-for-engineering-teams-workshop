@@ -1,3 +1,17 @@
+---
+id: PRD-001
+title: CustomerCard
+type: prd
+status: accepted
+description: >-
+  Product requirements for the CustomerCard: display name/company/health score,
+  customer domains, and a color-coded health indicator.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-001
+related: [SPEC-001, GUIDE-001, ADR-001, GUIDE-003]
+---
+
 # CustomerCard Requirements
 
 ## Business Context

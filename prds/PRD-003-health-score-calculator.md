@@ -1,3 +1,17 @@
+---
+id: PRD-003
+title: Health Score Calculator
+type: prd
+status: accepted
+description: >-
+  Product requirements for the customer health scoring system: weighted
+  multi-factor algorithm and a health-display widget with risk levels.
+created: 2026-07-23
+updated: 2026-07-23
+spec: SPEC-003
+related: [SPEC-003, GUIDE-006, GUIDE-001, ADR-002]
+---
+
 # Health Score Calculator Requirements
 
 ## Business Context
