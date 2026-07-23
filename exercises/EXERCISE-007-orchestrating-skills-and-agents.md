@@ -8,7 +8,7 @@ You've created multiple specifications, custom commands, and a dashboard-compone
 
 ## Success Criteria
 
-- [ ] Identify all specs in @specs/ directory
+- [ ] Identify all specs in @docs/specs/ directory
 - [ ] Implement each spec with a subagent using your skill's conventions
 - [ ] Verify each component against acceptance criteria
 - [ ] Complete Customer Intelligence Dashboard ready for integration
@@ -23,7 +23,7 @@ background: /bg-blue-bottom-right.jpeg
 
 **List all specification files:**
 ```
-What spec files do we have in @specs/?
+What spec files do we have in @docs/specs/?
 ```
 
 **Expected specs from earlier sessions:**
@@ -39,7 +39,7 @@ background: /bg-blue-bottom-right.jpeg
 
 **Create orchestration workflow:**
 ```
-For each spec file in @specs/, use a subagent to implement it:
+For each spec file in @docs/specs/, use a subagent to implement it:
 1. Inside each run, use the /implement command to generate the
    component (the dashboard-components skill supplies our conventions)
 2. Use the /verify command to test with mock data

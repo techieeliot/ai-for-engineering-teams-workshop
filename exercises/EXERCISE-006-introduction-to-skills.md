@@ -52,8 +52,8 @@ background: /bg-blue-bottom-right.jpeg
 ```
 Create a CustomerCard component at
 components/CustomerCard.tsx based on
-@prds/PRD-001-customer-card.md
-and @specs/SPEC-001-customer-card.md
+@docs/prds/PRD-001-customer-card.md
+and @docs/specs/SPEC-001-customer-card.md
 ```
 
 **Verify the skill triggered:** did the agent mention loading the `dashboard-components` skill? Are its conventions reflected in the output?

@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-002-customer-selector.md
+source: docs/prds/PRD-002-customer-selector.md
 related: [SPEC-001, SPEC-007]
 tags: [customer, ui, search, selection]
 ---

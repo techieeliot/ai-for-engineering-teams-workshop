@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-008-customer-management-integration.md
+source: docs/prds/PRD-008-customer-management-integration.md
 related: [SPEC-002, SPEC-004]
 tags: [crud, form, api]
 ---

@@ -18,11 +18,11 @@ How docs are organized, named, and structured in this repo.
 
 | Kind | Dir | Prefix | Purpose |
 | --- | --- | --- | --- |
-| PRD | `prds/` | `PRD` | Product requirements — the "why/what" for a feature (input to specs) |
-| Spec | `specs/` | `SPEC` | Buildable specification derived from a PRD |
-| ADR | `adrs/` | `ADR` | A decision of record (context → decision → consequences) |
-| Guide | `guides/` | `GUIDE` | A standard / how-to |
-| RFC | `rfcs/` | `RFC` | A proposal under discussion (pre-decision) |
+| PRD | `docs/prds/` | `PRD` | Product requirements — the "why/what" for a feature (input to specs) |
+| Spec | `docs/specs/` | `SPEC` | Buildable specification derived from a PRD |
+| ADR | `docs/adrs/` | `ADR` | A decision of record (context → decision → consequences) |
+| Guide | `docs/guides/` | `GUIDE` | A standard / how-to |
+| RFC | `docs/rfcs/` | `RFC` | A proposal under discussion (pre-decision) |
 | Exercise | `exercises/` | `EXERCISE` | Workshop exercise walkthroughs |
 
 ## Naming convention
@@ -32,9 +32,9 @@ exercises). `NNN` is a zero-padded 3-digit sequence, ordered by introduction
 (for specs, this follows the exercise chronology). Examples:
 
 ```
-specs/SPEC-001-customer-card.md
-adrs/ADR-001-shadcn-ownership-model.md
-guides/GUIDE-004-house-style.md
+docs/specs/SPEC-001-customer-card.md
+docs/adrs/ADR-001-shadcn-ownership-model.md
+docs/guides/GUIDE-004-house-style.md
 ```
 
 - Numbers are stable once assigned — never renumber; supersede instead.

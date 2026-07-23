@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-004-market-intelligence.md
+source: docs/prds/PRD-004-market-intelligence.md
 related: [SPEC-002, SPEC-008]
 tags: [market, widget, api]
 ---

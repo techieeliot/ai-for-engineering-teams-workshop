@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-001-customer-card.md
+source: docs/prds/PRD-001-customer-card.md
 related: [SPEC-002, SPEC-007, GUIDE-001]
 tags: [customer, ui, dashboard, card]
 ---

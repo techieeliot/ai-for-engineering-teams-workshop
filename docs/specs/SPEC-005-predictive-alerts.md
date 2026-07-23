@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-005-predictive-alerts.md
+source: docs/prds/PRD-005-predictive-alerts.md
 related: [SPEC-003, SPEC-004]
 tags: [alerts, risk, widget]
 ---

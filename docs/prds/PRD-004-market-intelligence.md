@@ -54,7 +54,7 @@ related: [SPEC-004, GUIDE-009, GUIDE-001, ADR-001]
 ## Spec-Driven Workflow Requirements
 - Generate comprehensive spec from these requirements
 - Analyze existing components for pattern consistency before spec creation
-- Store generated spec in @specs/ directory for reference
+- Store generated spec in @docs/specs/ directory for reference
 - Reference existing component patterns in spec constraints section
 
 ## Security Requirements

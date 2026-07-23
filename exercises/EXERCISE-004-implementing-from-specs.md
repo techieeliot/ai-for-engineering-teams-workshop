@@ -24,9 +24,9 @@ background: /bg-blue-bottom-right.jpeg
 
 **Ask Claude Code to implement from your specification:**
 ```
-Implement the CustomerCard component based on @specs/SPEC-001-customer-card.md
+Implement the CustomerCard component based on @docs/specs/SPEC-001-customer-card.md
 
-Use @prds/PRD-001-customer-card.md for context and create the component at components/CustomerCard.tsx
+Use @docs/prds/PRD-001-customer-card.md for context and create the component at components/CustomerCard.tsx
 ```
 
 **Review the generated code against your spec's acceptance criteria:**
@@ -44,7 +44,7 @@ background: /bg-blue-bottom-right.jpeg
 
 **If the component doesn't fully match your spec:**
 ```
-The component is missing [specific requirement from spec]. Please update it to match the acceptance criteria in @specs/SPEC-001-customer-card.md
+The component is missing [specific requirement from spec]. Please update it to match the acceptance criteria in @docs/specs/SPEC-001-customer-card.md
 ```
 
 **Common refinements:**
@@ -86,7 +86,7 @@ background: /bg-blue-bottom-right.jpeg
 
 ## Key Patterns Learned
 
-- **Spec Referencing** - Using `@specs/` to provide implementation context
+- **Spec Referencing** - Using `@docs/specs/` to provide implementation context
 - **Acceptance-Driven Development** - Verifying output against spec criteria
 - **Iterative Refinement** - Improving implementation through targeted prompts
 - **Spec as Contract** - Treating specification as source of truth for implementation

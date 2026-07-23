@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-006-production-ready-dashboard.md
+source: docs/prds/PRD-006-production-ready-dashboard.md
 related: [SPEC-009, GUIDE-005]
 tags: [production, error-handling, export]
 ---

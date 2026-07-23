@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-009-accessibility.md
+source: docs/prds/PRD-009-accessibility.md
 related: [GUIDE-003, SPEC-006]
 tags: [accessibility, wcag, cross-cutting]
 ---

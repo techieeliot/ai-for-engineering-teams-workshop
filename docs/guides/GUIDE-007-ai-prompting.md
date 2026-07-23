@@ -19,12 +19,12 @@ each hop reliable.
 ## Reference files, don't paste them
 Use `@`-references so the agent reads the source of truth:
 ```
-Write a spec from @prds/PRD-002-customer-selector.md and save it to
+Write a spec from @docs/prds/PRD-002-customer-selector.md and save it to
 specs/SPEC-002-customer-selector.md
 ```
 ```
-Implement the component from @specs/SPEC-001-customer-card.md; use
-@prds/PRD-001-customer-card.md for context.
+Implement the component from @docs/specs/SPEC-001-customer-card.md; use
+@docs/prds/PRD-001-customer-card.md for context.
 ```
 
 ## Be specific about output and location
@@ -36,14 +36,14 @@ Treat the spec's acceptance criteria as the contract. Ask the agent to verify it
 output against them, and refine with targeted prompts:
 ```
 The component is missing the domain count from the acceptance criteria in
-@specs/SPEC-001-customer-card.md. Update it to match.
+@docs/specs/SPEC-001-customer-card.md. Update it to match.
 ```
 
 ## Give the agent the standards
 Point to the relevant guides/ADRs so output matches house conventions:
 ```
-Follow @guides/GUIDE-001-css-ui-systems.md and
-@adrs/ADR-001-shadcn-ownership-model.md.
+Follow @docs/guides/GUIDE-001-css-ui-systems.md and
+@docs/adrs/ADR-001-shadcn-ownership-model.md.
 ```
 Better still, encode recurring conventions as an **Agent Skill**
 (`.claude/skills/…`) so they apply automatically, and automate repeated steps as

@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-003-health-score-calculator.md
+source: docs/prds/PRD-003-health-score-calculator.md
 related: [SPEC-002, SPEC-005, GUIDE-006]
 tags: [health, algorithm, widget]
 ---

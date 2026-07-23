@@ -26,9 +26,9 @@ background: /bg-blue-bottom-right.jpeg
 ```markdown
 Create a /spec command that:
 - Takes a component name as parameter (e.g., "CustomerCard")
-- Checks for @prds/PRD-NNN-[component-name].md file
+- Checks for @docs/prds/PRD-NNN-[component-name].md file
 - Generates a well-structured spec with Context, Requirements, Constraints, Acceptance Criteria
-- Saves to @specs/SPEC-NNN-[component-name].md (NNN = next sequence number)
+- Saves to @docs/specs/SPEC-NNN-[component-name].md (NNN = next sequence number)
 ```
 
 **Test it:**
@@ -45,7 +45,7 @@ background: /bg-blue-bottom-right.jpeg
 **Create `/implement` command:**
 ```markdown
 Create a /implement command that:
-- Takes a spec file path as parameter (e.g., "@specs/SPEC-001-customer-card.md")
+- Takes a spec file path as parameter (e.g., "@docs/specs/SPEC-001-customer-card.md")
 - Reads the specification file
 - Generates component at components/[ComponentName].tsx
 - Verifies output against acceptance criteria from spec
@@ -54,7 +54,7 @@ Create a /implement command that:
 
 **Test it:**
 ```
-/implement @specs/SPEC-NNN-health-indicator.md
+/implement @docs/specs/SPEC-NNN-health-indicator.md
 ```
 
 ---

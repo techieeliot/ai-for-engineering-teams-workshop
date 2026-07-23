@@ -32,21 +32,26 @@ npm run dev
 ```
 ├── src/                  # Next.js application source
 │   ├── app/             # App Router pages and layouts
+│   ├── components/      # feature components + ui/ shadcn primitives
+│   ├── lib/             # framework-agnostic logic (cn(), helpers)
 │   └── data/            # Mock data and API integration
 ├── public/              # Static assets
+├── docs/                # Documentation system (see docs/README.md)
+│   ├── prds/            # Product requirements (PRD-NNN, input to specs)
+│   ├── specs/           # Specifications (SPEC-NNN, derived from PRDs)
+│   ├── adrs/            # Architecture decision records (ADR-NNN)
+│   ├── guides/          # Standards & how-to guides (GUIDE-NNN)
+│   └── rfcs/            # Proposals under discussion (RFC-NNN)
 ├── exercises/           # Workshop exercises (EXERCISE-NNN)
-├── prds/                # Product requirements (PRD-NNN, input to specs)
-├── specs/               # Generated specifications (SPEC-NNN, AI output)
-├── adrs/                # Architecture decision records (ADR-NNN)
-└── guides/              # Standards & how-to guides (GUIDE-NNN)
+└── tests/               # Shared test setup/utilities (see GUIDE-006)
 ```
 
 ## Workshop Methodology
 
 This workshop teaches **spec-driven development** with AI agents:
 
-1. **Generate clear specifications** from the PRDs in `/prds/`
-2. **Store generated specs** in `/specs/` for reference
+1. **Generate clear specifications** from the PRDs in `/docs/prds/`
+2. **Store generated specs** in `/docs/specs/` for reference
 3. **Work through exercises** in `/exercises/` directory
 4. **Build iteratively** with AI assistance
 

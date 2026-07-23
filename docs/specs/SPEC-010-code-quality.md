@@ -9,7 +9,7 @@ description: >-
 owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
-source: prds/PRD-010-code-quality.md
+source: docs/prds/PRD-010-code-quality.md
 related: [GUIDE-004, ADR-001, ADR-002]
 tags: [quality, standards, cross-cutting]
 ---

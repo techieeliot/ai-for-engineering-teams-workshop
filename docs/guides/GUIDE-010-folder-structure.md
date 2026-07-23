@@ -29,11 +29,12 @@ src/
     utils.ts            # cn() and shared helpers
   data/                 # mock data + domain types (Customer)
 
-prds/                   # PRD-NNN-*.md product requirements (input to specs)
-specs/                  # SPEC-NNN-*.md specifications
-adrs/                   # ADR-NNN-*.md decisions
-guides/                 # GUIDE-NNN-*.md standards & how-tos
-rfcs/                   # RFC-NNN-*.md proposals
+docs/                   # documentation system (see docs/README.md)
+  prds/                 # PRD-NNN-*.md product requirements (input to specs)
+  specs/                # SPEC-NNN-*.md specifications
+  adrs/                 # ADR-NNN-*.md decisions
+  guides/               # GUIDE-NNN-*.md standards & how-tos
+  rfcs/                 # RFC-NNN-*.md proposals
 tests/                  # shared test setup/utilities (see GUIDE-006)
 exercises/              # EXERCISE-NNN-*.md workshop exercises
 ```

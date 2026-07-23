@@ -1,7 +1,7 @@
 # Tests
 
 Shared test setup and cross-cutting test utilities. Per
-[GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md), unit and
+[GUIDE-006 Test Structure](../docs/guides/GUIDE-006-test-structure.md), unit and
 component tests live **co-located** next to the code they cover
 (`healthCalculator.test.ts` beside `healthCalculator.ts`); this directory is for
 things that don't belong to a single unit.
