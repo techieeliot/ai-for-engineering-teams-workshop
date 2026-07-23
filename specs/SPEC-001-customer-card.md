@@ -33,10 +33,10 @@ tags: [customer, ui, dashboard, card]
 - Use a clean, card-based visual layout that includes domain information
 
 ### User Interface Requirements
-- Color-coded health indicator:
-  - Red: 0-30 (poor health)
-  - Yellow: 31-70 (moderate health)
-  - Green: 71-100 (good health)
+- Color-coded health indicator (risk levels shared with SPEC-003):
+  - Red: 0-30 (Critical)
+  - Yellow: 31-70 (Warning)
+  - Green: 71-100 (Healthy)
 - Basic responsive design that works on mobile and desktop
 - Clear typography hierarchy (name > company > supporting details)
 

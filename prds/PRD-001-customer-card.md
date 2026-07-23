@@ -22,18 +22,19 @@ related: [SPEC-001, GUIDE-001, ADR-001, GUIDE-003]
 
 ## Functional Requirements
 - Display customer name, company name, and health score
+- Display the customer email when available
 - Show customer domains (websites) for health monitoring context
-- Use color-coded health indicator:
-  - Red (0-30): Poor health score
-  - Yellow (31-70): Moderate health score  
-  - Green (71-100): Good health score
+- Use color-coded health indicator (risk levels shared with the health score calculator):
+  - Red (0-30): Critical
+  - Yellow (31-70): Warning
+  - Green (71-100): Healthy
 - Display domain count when customer has multiple domains
-- Basic responsive design for mobile and desktop
+- Basic responsive design for mobile, tablet, and desktop
 - Clean, card-based visual design with domain information
 
 ## Data Requirements
 - Uses mock data from `src/data/mock-customers.ts`
-- Customer interface includes optional `domains` array of website URLs
+- Customer interface includes optional `email` and optional `domains` array of website URLs
 - Supports customers with 1 or multiple domains for health checking
 
 ## UI Primitives

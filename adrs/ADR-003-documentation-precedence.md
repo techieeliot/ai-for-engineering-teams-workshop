@@ -76,8 +76,8 @@ Identified between the derived layer and the source-of-truth layer:
 | Health red threshold: `EXERCISE-006` says 0-40; `PRD-001` says 0-30 | PRD-001 | Use **0-30**. `SPEC-001`/`SPEC-003`/`src/lib/health.ts` already conform; **correct EXERCISE-006** to 0-30 |
 | Component exports: `GUIDE-004` prefers named; demo/exercises need a `default` export | EXERCISE / working demo | Broaden `GUIDE-004` to allow `export default` for dashboard/page components |
 | Paths: exercises use `components/`, `@data/`; guide/specs use `src/...` | Project layout | Treat exercise paths as shorthand for `src/...` (per rule above) |
-| Health labels: `PRD-001` = Poor/Moderate/Good; `PRD-003` = Healthy/Warning/Critical | PRD↔PRD (same tier) | **Product decision needed** — pick one vocabulary repo-wide |
-| `SPEC-001` requires email, max/min card size, tablet breakpoint; `PRD-001` is silent | PRD-001 | Decide: enrich `PRD-001` to include them, or trim `SPEC-001` |
+| Health labels: `PRD-001` = Poor/Moderate/Good; `PRD-003` = Healthy/Warning/Critical | PRD↔PRD (same tier) | **Resolved:** standardized on **Healthy/Warning/Critical**; `PRD-001` updated to match `PRD-003` and the implementation |
+| `SPEC-001` requires email, max/min card size, tablet breakpoint; `PRD-001` is silent | PRD-001 | **Resolved:** `PRD-001` enriched with email display + tablet breakpoint; card sizing/performance kept as spec-level detail (non-contradictory) |
 | Spec filenames need a stable `SPEC-NNN`; `EXERCISE-005` `/spec` auto-generates | EXERCISE-005 | Let `/spec` auto-increment `NNN` as part of its action |
 
 ## Related
