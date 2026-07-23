@@ -44,4 +44,13 @@ Each spec is generated from the matching file in `@docs/prds/` and includes a **
 | 009 | [SPEC-009-accessibility.md](SPEC-009-accessibility.md) | WCAG 2.1 AA; Radix-based primitives as the a11y foundation |
 | 010 | [SPEC-010-code-quality.md](SPEC-010-code-quality.md) | Consistent primitive reuse, theme tokens, shared helpers |
 
+### Integration specs (Exercise 03)
+Compose multiple single-feature specs; each documents Dependencies, Data Flow, and an Integration Architecture section.
+
+| # | Spec | Composes |
+| --- | --- | --- |
+| 011 | [SPEC-011-customer-health-monitoring.md](SPEC-011-customer-health-monitoring.md) | SPEC-002 + SPEC-003 + SPEC-005 (real-time health → alerts) |
+| 012 | [SPEC-012-dashboard-orchestrator.md](SPEC-012-dashboard-orchestrator.md) | SPEC-001–005 + SPEC-006 + SPEC-009 (shell, shared selection, error isolation) |
+| 013 | [SPEC-013-predictive-intelligence.md](SPEC-013-predictive-intelligence.md) | SPEC-002 + SPEC-004 + SPEC-005 (risk + market sentiment) |
+
 Use [SPEC-001-customer-card.md](SPEC-001-customer-card.md) as the reference example when writing new specs — it shows the full section structure (Context, Requirements, Constraints, Acceptance Criteria) with a UI Components (shadcn/ui) section.

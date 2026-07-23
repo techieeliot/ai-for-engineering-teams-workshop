@@ -10,7 +10,7 @@ owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
 source: docs/prds/PRD-006-production-ready-dashboard.md
-related: [SPEC-009, GUIDE-005]
+related: [SPEC-001, SPEC-002, SPEC-003, SPEC-004, SPEC-005, SPEC-009, SPEC-012, GUIDE-005]
 tags: [production, error-handling, export]
 ---
 
@@ -49,6 +49,12 @@ tags: [production, error-handling, export]
 - Input validation/sanitization for all inputs and API responses
 - Rate limiting on API + export endpoints; sanitized error messages
 
+### Deployment & Monitoring
+- Production Next.js config with security headers; environment-specific configuration
+- Health-check endpoints; error tracking + Core Web Vitals / runtime monitoring integration
+- Service worker for offline capability and caching
+- Build optimization (tree-shaking, bundle analysis, source maps)
+
 ### UI Components (shadcn/ui)
 - **Alert** (`@/components/ui/alert`) — error-boundary fallback messaging with recovery guidance
 - **Button** (`@/components/ui/button`) — retry/recover actions
@@ -78,6 +84,12 @@ tags: [production, error-handling, export]
 - Boundaries: `src/components/DashboardErrorBoundary.tsx`, `WidgetErrorBoundary.tsx`
 - Export: `src/lib/exportUtils.ts`
 - Reuse shadcn primitives from `src/components/ui/`; never fork them
+
+## Testing Requirements
+- Error scenarios: a thrown widget error is caught by its boundary; retry recovers
+- Export: CSV/JSON correctness, filters, cancellation, large-dataset handling
+- Accessibility: axe-core + keyboard/screen-reader checks (WCAG 2.1 AA)
+- Performance: Core Web Vitals budgets (LCP < 2.5s, CLS < 0.1, TTI < 3.5s)
 
 ## Standards & References
 Implement this spec per the repo's standards:

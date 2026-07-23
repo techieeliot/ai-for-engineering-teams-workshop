@@ -87,6 +87,12 @@ tags: [market, widget, api]
 - Error message sanitization (no sensitive info leakage)
 - Mock data avoids external API vulnerabilities
 
+## Testing Requirements
+- API route: input validation/sanitization, delay simulation, consistent JSON shape
+- Service: TTL cache hit/expiry, `MarketIntelligenceError` handling, mock-data determinism
+- Component: renders sentiment/headlines; loading (`Skeleton`) and error (`Alert`) states
+- Company-name input validation (injection prevention)
+
 ## Standards & References
 Implement this spec per the repo's standards:
 - **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)

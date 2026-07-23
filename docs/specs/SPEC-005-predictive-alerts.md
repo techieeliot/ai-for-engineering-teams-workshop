@@ -10,7 +10,7 @@ owner: dashboard-maintainers
 created: 2026-07-23
 updated: 2026-07-23
 source: docs/prds/PRD-005-predictive-alerts.md
-related: [SPEC-003, SPEC-004]
+related: [SPEC-002, SPEC-003, SPEC-004, GUIDE-006]
 tags: [alerts, risk, widget]
 ---
 
@@ -44,10 +44,23 @@ tags: [alerts, risk, widget]
 - Dismiss/acknowledge/action tracking
 - Historical alerts view + analytics
 
+### Data Monitoring & Delivery
+- Real-time change detection on health score, login frequency, payment timing, support
+  trends, and feature usage (distinguish gradual vs sudden drops)
+- Customer state tracking (prior values) for trend/delta analysis
+- Business-hours consideration for alert delivery timing
+- Alert-state synchronization across dashboard sessions
+
+### Monitoring & Analytics
+- Alert-effectiveness tracking and fatigue monitoring to tune thresholds
+- Export of alert data/history — provided via the aggregate export in
+  [SPEC-006](./SPEC-006-production-ready-dashboard.md) / [SPEC-012](./SPEC-012-dashboard-orchestrator.md)
+
 ### UI Components (shadcn/ui)
 - **Card** (`@/components/ui/card`) — widget container matching other widgets
 - **Alert** (`@/components/ui/alert`) — individual alert rows (title + recommended action)
-- **Badge** (`@/components/ui/badge`) — priority indicator (High/Medium) via shared color mapping
+- **Badge** (`@/components/ui/badge`) — priority indicator using a **distinct 2-tier** mapping
+  (High = destructive/red, Medium = warning/yellow); do not reuse the 3-level health scale
 - **Sonner** (`@/components/ui/sonner`) — toast for newly triggered high-priority alerts
 - **ScrollArea** (`@/components/ui/scroll-area`) — scrollable alert feed / history
 - **Dialog** (`@/components/ui/dialog`) — alert detail panel with context + actions
