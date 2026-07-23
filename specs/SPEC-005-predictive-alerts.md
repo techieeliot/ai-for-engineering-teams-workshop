@@ -1,3 +1,19 @@
+---
+id: SPEC-005
+title: Predictive Alerts System
+type: spec
+status: draft
+description: >-
+  Spec for the rule-based predictive alerts engine and widget: priority tiers,
+  cooldown/dedup, and a real-time alert feed with detail panels.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-005-predictive-alerts.md
+related: [SPEC-003, SPEC-004]
+tags: [alerts, risk, widget]
+---
+
 # Feature: Predictive Alerts System
 
 ## Context
@@ -68,6 +84,12 @@
 - Edge/boundary + realistic risk-profile scenarios
 - Deduplication and cooldown behavior tests
 - Performance tests for real-time generation
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)
+- **UI (widget):** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md), [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **Tests:** [GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md) — pure-function coverage for every rule
 
 ## Acceptance Criteria
 

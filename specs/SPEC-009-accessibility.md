@@ -1,3 +1,19 @@
+---
+id: SPEC-009
+title: Accessibility
+type: spec
+status: draft
+description: >-
+  Cross-cutting spec for WCAG 2.1 AA across the dashboard, using Radix-based
+  shadcn primitives as the keyboard/ARIA foundation.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-009-accessibility.md
+related: [GUIDE-003, SPEC-006]
+tags: [accessibility, wcag, cross-cutting]
+---
+
 # Feature: Accessibility (WCAG 2.1 AA)
 
 ## Context
@@ -39,6 +55,12 @@
 - Screen readers: NVDA, JAWS, VoiceOver
 - Contrast validation (light + dark, high-contrast mode)
 - Mobile accessibility on representative devices
+
+## Standards & References
+This cross-cutting spec is governed by:
+- **Primary how-to:** [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **UI foundation:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md)
+- **Enforcement:** [GUIDE-005 Code Review](../guides/GUIDE-005-code-review.md)
 
 ## Acceptance Criteria
 

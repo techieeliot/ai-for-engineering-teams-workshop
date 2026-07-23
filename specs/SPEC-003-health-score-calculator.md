@@ -1,3 +1,19 @@
+---
+id: SPEC-003
+title: Health Score Calculator
+type: spec
+status: draft
+description: >-
+  Spec for the weighted health-score algorithm (payment/engagement/contract/
+  support) and the CustomerHealthDisplay widget with factor breakdown.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-003-health-score-calculator.md
+related: [SPEC-002, SPEC-005, GUIDE-006]
+tags: [health, algorithm, widget]
+---
+
 # Feature: Health Score Calculator + CustomerHealthDisplay
 
 ## Context
@@ -64,6 +80,12 @@
 - Boundary/edge-case tests (new customers, missing data, range limits)
 - Realistic scenario tests and mathematical-accuracy verification
 - Input-validation and error-handling tests
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)
+- **UI (widget):** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md), [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **Tests:** [GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md) — pure-function coverage is required here
 
 ## Acceptance Criteria
 

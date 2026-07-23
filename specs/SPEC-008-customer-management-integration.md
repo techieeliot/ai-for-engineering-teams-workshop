@@ -1,3 +1,19 @@
+---
+id: SPEC-008
+title: Customer Management Integration
+type: spec
+status: draft
+description: >-
+  Spec for full customer CRUD: API routes, CustomerService, AddCustomerForm
+  (react-hook-form + zod), and CustomerList table with validation.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-008-customer-management-integration.md
+related: [SPEC-002, SPEC-004]
+tags: [crud, form, api]
+---
+
 # Feature: Customer Management Integration
 
 ## Context
@@ -67,6 +83,13 @@
 - Sanitize data before storage and display
 - Error message sanitization (no sensitive info leakage)
 - Rate-limiting considerations for creation routes
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)
+- **UI & forms:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md), [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **API/forms:** [GUIDE-009 Technical Recipes](../guides/GUIDE-009-technical-recipes.md) (Route Handler + validated form)
+- **Tests:** [GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md)
 
 ## Acceptance Criteria
 

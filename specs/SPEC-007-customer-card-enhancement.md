@@ -1,3 +1,19 @@
+---
+id: SPEC-007
+title: CustomerCard Selection Enhancement
+type: spec
+status: draft
+description: >-
+  Spec for adding clickable single-selection state to CustomerCard with visual
+  feedback, preserving existing card behavior.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-007-customer-card-enhancement.md
+related: [SPEC-001, SPEC-002]
+tags: [customer, ui, selection]
+---
+
 # Feature: CustomerCard Selection Enhancement
 
 ## Context
@@ -54,6 +70,12 @@
 
 ### Security Considerations
 - No new user-rendered strings introduced; maintain text-only rendering
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md)
+- **UI:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md), [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **Base component:** [SPEC-001 CustomerCard](./SPEC-001-customer-card.md)
 
 ## Acceptance Criteria
 

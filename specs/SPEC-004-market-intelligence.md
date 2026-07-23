@@ -1,3 +1,19 @@
+---
+id: SPEC-004
+title: Market Intelligence Widget
+type: spec
+status: draft
+description: >-
+  Spec for the market-intelligence widget and API: company sentiment, news
+  count, and top headlines with caching, matching existing widget patterns.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-004-market-intelligence.md
+related: [SPEC-002, SPEC-008]
+tags: [market, widget, api]
+---
+
 # Feature: Market Intelligence Widget
 
 ## Context
@@ -70,6 +86,13 @@
 - Timeout simulation + error handling
 - Error message sanitization (no sensitive info leakage)
 - Mock data avoids external API vulnerabilities
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)
+- **UI:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md), [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **API:** [GUIDE-009 Technical Recipes](../guides/GUIDE-009-technical-recipes.md) (Route Handler pattern)
+- **Tests:** [GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md)
 
 ## Acceptance Criteria
 

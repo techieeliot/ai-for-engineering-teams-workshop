@@ -1,3 +1,19 @@
+---
+id: SPEC-010
+title: Code Quality Standards
+type: spec
+status: draft
+description: >-
+  Cross-cutting spec for code quality: reuse shadcn primitives (no forking),
+  theme tokens, shared visual helpers, named exports, and typed props.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-010-code-quality.md
+related: [GUIDE-004, ADR-001, ADR-002]
+tags: [quality, standards, cross-cutting]
+---
+
 # Feature: Code Quality Standards
 
 ## Context
@@ -33,6 +49,12 @@
 - Applies to all components and specs in this repo
 - Next.js 15 App Router, React 19, TypeScript strict mode
 - ESLint (`eslint-config-next`) and `tsc --noEmit` must pass
+
+## Standards & References
+This cross-cutting spec is governed by:
+- **House style:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md)
+- **UI system:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md)
+- **Enforcement:** [GUIDE-005 Code Review](../guides/GUIDE-005-code-review.md)
 
 ## Acceptance Criteria
 

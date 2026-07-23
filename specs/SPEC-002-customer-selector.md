@@ -1,3 +1,19 @@
+---
+id: SPEC-002
+title: CustomerSelector
+type: spec
+status: draft
+description: >-
+  Spec for the CustomerSelector container: search/filter across 100+ customers,
+  single selection state, and CustomerCard grid composition.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-002-customer-selector.md
+related: [SPEC-001, SPEC-007]
+tags: [customer, ui, search, selection]
+---
+
 # Feature: CustomerSelector Component
 
 ## Context
@@ -57,6 +73,12 @@
 ### Security Considerations
 - Treat search input as plain text; never interpolate into HTML
 - Render all customer fields as text only
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)
+- **UI:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md), [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md)
+- **Tests:** [GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md)
 
 ## Acceptance Criteria
 

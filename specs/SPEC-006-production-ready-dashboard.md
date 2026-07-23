@@ -1,3 +1,19 @@
+---
+id: SPEC-006
+title: Production-Ready Dashboard
+type: spec
+status: draft
+description: >-
+  Spec for hardening the dashboard: multi-level error boundaries, CSV/JSON
+  export, performance, accessibility, and security headers.
+owner: dashboard-maintainers
+created: 2026-07-23
+updated: 2026-07-23
+source: prds/PRD-006-production-ready-dashboard.md
+related: [SPEC-009, GUIDE-005]
+tags: [production, error-handling, export]
+---
+
 # Feature: Production-Ready Dashboard
 
 ## Context
@@ -62,6 +78,13 @@
 - Boundaries: `src/components/DashboardErrorBoundary.tsx`, `WidgetErrorBoundary.tsx`
 - Export: `src/lib/exportUtils.ts`
 - Reuse shadcn primitives from `src/components/ui/`; never fork them
+
+## Standards & References
+Implement this spec per the repo's standards:
+- **Code:** [GUIDE-004 House Style](../guides/GUIDE-004-house-style.md), [ADR-002 Code Comments](../adrs/ADR-002-code-comments.md), [GUIDE-010 Folder Structure](../guides/GUIDE-010-folder-structure.md)
+- **UI:** [GUIDE-001 CSS & UI Systems](../guides/GUIDE-001-css-ui-systems.md), [ADR-001 shadcn/ui Ownership](../adrs/ADR-001-shadcn-ownership-model.md)
+- **Accessibility:** [GUIDE-003 Accessibility](../guides/GUIDE-003-accessibility.md), [SPEC-009 Accessibility](./SPEC-009-accessibility.md)
+- **Review & release:** [GUIDE-005 Code Review](../guides/GUIDE-005-code-review.md), [GUIDE-006 Test Structure](../guides/GUIDE-006-test-structure.md)
 
 ## Acceptance Criteria
 
