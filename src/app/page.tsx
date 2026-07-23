@@ -1,53 +1,11 @@
-'use client';
-
-import { Suspense } from 'react';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-
-// Dynamic component imports with error boundaries
-const CustomerCardDemo = () => {
-  try {
-    // Try to import CustomerCard - this will work after Exercise 3
-    const CustomerCard = require('../components/CustomerCard')?.default;
-    const mockCustomers = require('../data/mock-customers')?.mockCustomers;
-
-    if (CustomerCard && mockCustomers?.[0]) {
-      return (
-        <div className="space-y-4">
-          <p className="text-sm font-medium text-green-600 dark:text-green-500">
-            ✅ CustomerCard implemented!
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <CustomerCard customer={mockCustomers[0]} />
-            <CustomerCard customer={mockCustomers[1]} />
-          </div>
-        </div>
-      );
-    }
-  } catch (error) {
-    // Component doesn't exist yet
-  }
-
-  return (
-    <div className="text-sm text-muted-foreground">
-      After Exercise 3, your CustomerCard components will appear here showing customer information with health scores.
-    </div>
-  );
-};
-
-const DashboardWidgetDemo = ({ widgetName, exerciseNumber }: { widgetName: string, exerciseNumber: number }) => {
-  return (
-    <div className="rounded-lg border-2 border-dashed border-border p-4 text-center text-sm text-muted-foreground">
-      {widgetName}
-      <br />
-      <span className="text-xs">Exercise {exerciseNumber}</span>
-    </div>
-  );
-};
+import { CustomerCardDemo } from './_components/CustomerCardDemo';
+import { DashboardWidgetDemo } from './_components/DashboardWidgetDemo';
 
 export default function Home() {
   return (
@@ -69,7 +27,7 @@ export default function Home() {
         </CardHeader>
         <CardContent className="space-y-2 text-sm text-muted-foreground">
           <p className="text-foreground">✅ Setup Complete - Next.js app is running</p>
-          <p>⏳ Exercise 3: CustomerCard component (implement to see here)</p>
+          <p className="text-foreground">✅ Exercise 3: CustomerCard component implemented</p>
           <p>⏳ Exercise 4: CustomerSelector integration</p>
           <p>⏳ Exercise 5: Domain Health widget</p>
           <p>⏳ Exercise 9: Production-ready features</p>
@@ -84,9 +42,7 @@ export default function Home() {
             <CardTitle className="text-lg">CustomerCard Component</CardTitle>
           </CardHeader>
           <CardContent>
-            <Suspense fallback={<div className="text-muted-foreground">Loading...</div>}>
-              <CustomerCardDemo />
-            </Suspense>
+            <CustomerCardDemo />
           </CardContent>
         </Card>
 
