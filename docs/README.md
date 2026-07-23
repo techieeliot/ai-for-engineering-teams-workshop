@@ -22,7 +22,7 @@ docs must be updated to conform.
 | Dir | Kind | Index |
 | --- | --- | --- |
 | `prds/` | Product requirements (`PRD-NNN`) — the why/what | [index](./prds/README.md) |
-| `specs/` | Specifications (`SPEC-NNN`) — buildable, derived from a PRD | [index](./specs/README.md) |
+| `specs/` | Specifications (`SPEC-NNN`) — buildable; single-feature (001–010) + integration (011–013) | [index](./specs/README.md) |
 | `adrs/` | Architecture decision records (`ADR-NNN`) | [index](./adrs/README.md) |
 | `guides/` | Standards & how-to guides (`GUIDE-NNN`) | [index](./guides/README.md) |
 | `rfcs/` | Proposals under discussion (`RFC-NNN`) | [index](./rfcs/README.md) |
@@ -35,5 +35,7 @@ Related directories that live at the repo root (not under `docs/`):
 ## Naming
 
 `TYPE-NNN-kebab-title.md` for every numbered doc; `NNN` is a stable, zero-padded
-sequence. `PRD-NNN` and its derived `SPEC-NNN` share the same number. README.md
-files are indexes and are exempt from numbering and frontmatter.
+sequence. A single-feature `PRD-NNN` and its derived `SPEC-NNN` share the same
+number (001–010); **integration specs (011–013) compose several specs** and map
+to multiple PRDs rather than one. README.md files are indexes and are exempt from
+numbering and frontmatter.

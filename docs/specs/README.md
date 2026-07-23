@@ -24,7 +24,7 @@ See [GUIDE-008 Documentation Standards](../guides/GUIDE-008-documentation-standa
 
 ## Spec Index
 
-Each spec is generated from the matching file in `@docs/prds/` and includes a **UI Components (shadcn/ui)** section. Numbering 001–006 follows the order features are introduced across the exercises; 007–010 are additional specs not tied to a specific exercise.
+Each single-feature spec is generated from the matching file in `@docs/prds/` and includes a **UI Components (shadcn/ui)** section. Numbering 001–006 follows the order features are introduced across the exercises; 007–010 are additional single-feature specs; **011–013 are Exercise-03 integration specs** that compose several of the above (so they map to multiple PRDs rather than one).
 
 ### Exercise-driven (chronological)
 | # | Spec | Intro | Focus |
