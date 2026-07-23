@@ -73,21 +73,28 @@ EOF
   `upstream`. Open PRs against `upstream/main` (or your fork's `main` for
   workshop work).
 
-## Pre-commit hooks
+## Git hooks
 
-Commits are gated by **husky + lint-staged** (`.husky/pre-commit` → `npx lint-staged`).
-On staged `*.ts`/`*.tsx` files it runs, and **blocks the commit on failure**:
+Managed by **husky** (installed via the `prepare` script on `npm install`).
+
+### `pre-commit` — fast, scoped (via lint-staged)
+`.husky/pre-commit` → `npx lint-staged`. On staged `*.ts`/`*.tsx` it runs, and
+**blocks the commit on failure**:
 
 1. `eslint --fix` on the staged files
 2. `vitest related --run` — the tests importing those files (non-watch)
 3. `tsc --noEmit` — a project-wide type-check
 
-Setup is automatic: the `prepare` script runs `husky` on `npm install`, so a fresh
-clone gets the hook. Config lives in `lint-staged.config.mjs`.
+Config lives in `lint-staged.config.mjs`. Keep the hook fast by keeping tests
+co-located so `vitest related` stays scoped (see [GUIDE-006](./GUIDE-006-test-structure.md)).
 
-- **Emergency bypass:** `git commit --no-verify` (use sparingly; CI/reviewers still check).
-- Keep the hook fast by keeping tests co-located so `vitest related` stays scoped
-  (see [GUIDE-006](./GUIDE-006-test-structure.md)).
+### `pre-push` — full suite
+`.husky/pre-push` → `npm run test:run` runs the **entire** test suite before a push,
+**blocking the push on failure**. This catches breakage the scoped pre-commit run
+misses (e.g. a change that breaks an unrelated test).
+
+- **Emergency bypass:** `git commit --no-verify` / `git push --no-verify`
+  (use sparingly; reviewers still check).
 
 ## PR bodies
 
@@ -104,4 +111,4 @@ Summarize what and why; list the commits; note verification (e.g.
 - [ ] One logical change per commit
 - [ ] Co-author trailer on AI-assisted commits
 - [ ] `type-check` / `lint` pass before pushing
-- [ ] Pre-commit hook (husky + lint-staged) passed — don't routinely `--no-verify`
+- [ ] Pre-commit (lint-staged) + pre-push (full tests) hooks passed — don't routinely `--no-verify`
