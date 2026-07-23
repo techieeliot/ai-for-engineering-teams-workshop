@@ -13,3 +13,4 @@ renumber.
 | --- | --- | --- | --- |
 | 001 | [ADR-001-shadcn-ownership-model.md](ADR-001-shadcn-ownership-model.md) | Accepted | Treat `src/components/ui/` as owned-but-pristine; extend via composition, theme via tokens |
 | 002 | [ADR-002-code-comments.md](ADR-002-code-comments.md) | Accepted | Comment the *why*, not the *what*; JSDoc for business logic |
+| 003 | [ADR-003-documentation-precedence.md](ADR-003-documentation-precedence.md) | Accepted | PRD & EXERCISE files supersede ADR/GUIDE/SPEC on conflict |

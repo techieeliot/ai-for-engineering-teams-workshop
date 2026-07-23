@@ -32,8 +32,10 @@ Baseline conventions for all code in this repo. Backs
 ## React / Next.js
 - **Server Components by default**; add `"use client"` only when a component
   needs state, effects, or browser APIs.
-- Prefer **named exports** for components (default export only where a framework
-  requires it, e.g. `app/page.tsx`).
+- Prefer **named exports** for components. Use `export default` where the
+  framework or the dashboard's dynamic loader expects it — e.g. `app/page.tsx`,
+  and dashboard components loaded via `require(...).default` (such as
+  `CustomerCard`). See [ADR-003](../adrs/ADR-003-documentation-precedence.md).
 - Extract reusable logic into custom hooks (`useX`).
 - Always render explicit **loading** and **error** states for async work.
 - Use semantic JSX that describes purpose, not appearance.

@@ -28,7 +28,7 @@ that encodes our Customer Intelligence Dashboard conventions:
 - React 19 + TypeScript components with Tailwind styling
 - Next.js App Router patterns (Server Components by default,
   'use client' only when needed)
-- Health score color rules: red 0-40, yellow 41-70, green 71-100
+- Health score color rules: red 0-30, yellow 31-70, green 71-100
 - Components live at components/[ComponentName].tsx
 
 The description should make it trigger whenever we create or
