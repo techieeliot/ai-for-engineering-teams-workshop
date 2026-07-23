@@ -24,9 +24,9 @@ background: /bg-blue-bottom-right.jpeg
 
 **Ask Claude Code to implement from your specification:**
 ```
-Implement the CustomerCard component based on @specs/customer-card-spec.md
+Implement the CustomerCard component based on @specs/SPEC-001-customer-card.md
 
-Use @requirements/customer-card.md for context and create the component at components/CustomerCard.tsx
+Use @prds/PRD-001-customer-card.md for context and create the component at components/CustomerCard.tsx
 ```
 
 **Review the generated code against your spec's acceptance criteria:**
@@ -44,7 +44,7 @@ background: /bg-blue-bottom-right.jpeg
 
 **If the component doesn't fully match your spec:**
 ```
-The component is missing [specific requirement from spec]. Please update it to match the acceptance criteria in @specs/customer-card-spec.md
+The component is missing [specific requirement from spec]. Please update it to match the acceptance criteria in @specs/SPEC-001-customer-card.md
 ```
 
 **Common refinements:**

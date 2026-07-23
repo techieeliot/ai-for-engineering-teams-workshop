@@ -22,17 +22,17 @@ background: /bg-blue-bottom-right.jpeg
 
 **Customer Health Monitoring Integration:**
 ```
-Write a CustomerHealthMonitoring spec based on @requirements/health-score-calculator.md and @requirements/predictive-alerts.md
+Write a CustomerHealthMonitoring spec based on @prds/PRD-003-health-score-calculator.md and @prds/PRD-005-predictive-alerts.md
 ```
 
 **Dashboard Orchestration System:**
 ```
-Write a DashboardOrchestrator spec based on @requirements/production-ready-dashboard.md
+Write a DashboardOrchestrator spec based on @prds/PRD-006-production-ready-dashboard.md
 ```
 
 **Predictive Customer Intelligence:**
 ```
-Write a PredictiveIntelligence spec based on @requirements/predictive-alerts.md and @requirements/market-intelligence.md
+Write a PredictiveIntelligence spec based on @prds/PRD-005-predictive-alerts.md and @prds/PRD-004-market-intelligence.md
 ```
 
 ---

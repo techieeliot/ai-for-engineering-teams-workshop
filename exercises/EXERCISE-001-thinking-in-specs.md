@@ -20,7 +20,7 @@ background: /bg-blue-bottom-right.jpeg
 
 **Ask Claude Code:**
 ```
-Write a CustomerCard spec based on @requirements/customer-card.md and save it to specs/customer-card-spec.md
+Write a CustomerCard spec based on @prds/PRD-001-customer-card.md and save it to specs/SPEC-001-customer-card.md
 ```
 
 **Review the generated spec:**

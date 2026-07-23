@@ -27,7 +27,7 @@ Build on your CustomerCard specification experience to create specs for addition
 **CustomerSelector**
 ```
 Write a spec from
-@requirements/customer-selector.md
+@prds/PRD-002-customer-selector.md
 ```
 Focus: Container, search, selection
 
@@ -38,7 +38,7 @@ Focus: Container, search, selection
 **HealthScoreCalculator**
 ```
 Write a spec from
-@requirements/health-score-calculator.md
+@prds/PRD-003-health-score-calculator.md
 ```
 Focus: Business logic, algorithms
 
@@ -49,7 +49,7 @@ Focus: Business logic, algorithms
 **MarketIntelligence**
 ```
 Write a spec from
-@requirements/market-intelligence.md
+@prds/PRD-004-market-intelligence.md
 ```
 Focus: Data display, integration
 

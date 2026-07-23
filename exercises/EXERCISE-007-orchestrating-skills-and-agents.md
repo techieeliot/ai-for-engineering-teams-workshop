@@ -27,7 +27,7 @@ What spec files do we have in @specs/?
 ```
 
 **Expected specs from earlier sessions:**
-- customer-card-spec.md (from Exercise 01)
+- SPEC-001-customer-card.md (from Exercise 01)
 - Additional component specs (from Exercise 02)
 - Integration specs (from Exercise 03)
 
