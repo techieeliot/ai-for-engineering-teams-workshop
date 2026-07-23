@@ -26,10 +26,7 @@
           "anthropic.claude-code": ["workspace"],
           "RooVeterinaryInc.roo-cline": ["workspace"]
         },
-        "settings": {
-          "editor.formatOnSave": true,
-          "typescript.tsdk": "app/node_modules/typescript/lib"
-        },
+        "editor.formatOnSave": true,
         "extensions.ignoreRecommendations": false,
         "update.mode": "manual"
       }
