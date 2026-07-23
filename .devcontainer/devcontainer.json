@@ -16,7 +16,8 @@
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "anthropic.claude-code",
-        "RooVeterinaryInc.roo-cline"
+        "RooVeterinaryInc.roo-cline",
+        "bradlc.vscode-tailwindcss"
       ],
       "settings": {
         "remote.extensionKind": {

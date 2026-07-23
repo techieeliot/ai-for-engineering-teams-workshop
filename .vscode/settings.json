@@ -1,0 +1,9 @@
+{
+  // Treat CSS files as Tailwind so the Tailwind CSS IntelliSense language
+  // server handles them — this recognizes v4 at-rules (@theme, @apply,
+  // @custom-variant, @import "tailwindcss") instead of the built-in CSS
+  // validator flagging them as "Unknown at rule".
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
