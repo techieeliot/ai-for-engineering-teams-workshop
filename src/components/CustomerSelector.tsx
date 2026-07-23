@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import CustomerCard from "@/components/CustomerCard";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { mockCustomers, type Customer } from "@/data/mock-customers";
 
@@ -52,16 +54,26 @@ export default function CustomerSelector({
 
   return (
     <div className={cn("flex flex-col gap-4", className)}>
-      <label htmlFor="customer-search" className="sr-only">
-        Search customers
-      </label>
-      <Input
-        id="customer-search"
-        type="search"
-        placeholder="Search by name or company…"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-      />
+      <div className="flex flex-col gap-1.5">
+        <Label htmlFor="customer-search">Search customers</Label>
+        <div className="flex gap-2">
+          <Input
+            id="customer-search"
+            type="search"
+            placeholder="Search by name or company…"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => setQuery("")}
+            disabled={query === ""}
+          >
+            Clear
+          </Button>
+        </div>
+      </div>
 
       {filtered.length === 0 ? (
         <p className="text-sm text-muted-foreground">
